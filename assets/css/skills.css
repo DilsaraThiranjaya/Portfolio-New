@@ -22,7 +22,6 @@
 
 .header-box {
   height: 110px;
-  width: 100%;
   background: linear-gradient(
     to bottom,
     #060606 51%,
@@ -30,7 +29,6 @@
     #1b1b1b 100%
   );
   border: 3px solid #c6a600;
-  box-sizing: border-box;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -127,10 +125,12 @@ hr {
 /* ------------------------------- Footer ------------------------------- */
 
 .footer-box {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 20px;
-  padding-bottom: 10px;
+  padding: 10px 20px;
 }
 
 #copyright {
@@ -140,4 +140,96 @@ hr {
   opacity: 0.8;
   text-align: center;
   color: #c6a600;
+}
+
+.main-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.left-side-box {
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.middle-box {
+  width: 500px;
+}
+
+.right-side-box {
+  width: 190px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 25px;
+  height: 25px;
+  padding: 0px 10px;
+}
+
+.contact-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  text-align: justify;
+  color: #c6a600;
+}
+
+#footer-name {
+  font-family: "Playwrite CU", cursive;
+  font-weight: 600;
+  font-size: 30px;
+  color: #c6a600;
+}
+
+#footer-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 180px;
+}
+
+#follow-me-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  text-align: justify;
+  color: #c6a600;
+  justify-self: flex-start;
+}
+
+.social-media {
+  width: 100%;
+  align-self: flex-end;
+  text-align: center;
+}
+
+.social-media-icon {
+  width: 40px;
+  height: 40px;
+}
+
+#email-icon {
+  height: 30px;
+  width: 40px;
+  padding: 5px;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media-icon:hover {
+  transition: ease-in 0.3s;
+  transform: scale(1.2);
 }
