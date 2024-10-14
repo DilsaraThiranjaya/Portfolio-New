@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .background {
   background-color: #c6a600;
   margin: 0;
@@ -21,6 +26,7 @@
 /* ------------------------------- Header ------------------------------- */
 
 .header-box {
+  scale: 1.005;
   height: 110px;
   background: linear-gradient(
     to bottom,
@@ -125,7 +131,7 @@ hr {
 .content-header {
   font-family: "Merriweather", serif;
   color: #c6a600;
-  font-size: 25px;
+  font-size: 1.7rem;
   padding-left: 50px;
 }
 
@@ -135,7 +141,7 @@ hr {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 80px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .section-img {
@@ -145,15 +151,17 @@ hr {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-left: 0 auto;
+  align-self: center;
+  object-fit: contain;
 }
 
 .detail-list {
   width: 500px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   list-style: none;
   padding: 10px;
 }
@@ -161,7 +169,12 @@ hr {
 .sub-header {
   color: #c6a600;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 22px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+#no-work {
+  margin: 100px 0px;
 }
 
 /* ------------------------------- Footer ------------------------------- */
@@ -201,22 +214,25 @@ hr {
 }
 
 .middle-box {
-  width: 500px;
+  width: 400px;
 }
 
 .right-side-box {
   width: 190px;
+  margin-right: 10px;
 }
 
 .contact-content {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 43px;
+  column-gap: 10px;
 }
 
 .contact-icon {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   padding: 0px 10px;
 }
 
@@ -275,4 +291,3 @@ hr {
   transition: ease-in 0.3s;
   transform: scale(1.2);
 }
-

@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .background {
   background-color: #c6a600;
   margin: 0;
@@ -21,6 +26,7 @@
 /* ------------------------------- Header ------------------------------- */
 
 .header-box {
+  scale: 1.005;
   height: 110px;
   background: linear-gradient(
     to bottom,
@@ -151,22 +157,25 @@
 }
 
 .middle-box {
-  width: 500px;
+  width: 400px;
 }
 
 .right-side-box {
   width: 190px;
+  margin-right: 10px;
 }
 
 .contact-content {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 43px;
+  column-gap: 10px;
 }
 
 .contact-icon {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   padding: 0px 10px;
 }
 
