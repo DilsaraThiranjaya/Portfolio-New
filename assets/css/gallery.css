@@ -111,6 +111,49 @@ body {
   box-shadow: none;
 }
 
+/* ------------------------------- Content ------------------------------- */
+
+hr {
+  width: 95%;
+  border: 2px solid #c6a600;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.section-header {
+  font-family: "Merriweather", serif;
+  color: #c6a600;
+  font-size: 1.7rem;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.section-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin: 0 50px;
+}
+
+.item-container {
+  height: 300px;
+  width: 400px;
+  border: 3px solid #c6a600;
+  border-radius: 30px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.item-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
 /* ------------------------------- Footer ------------------------------- */
 
 .footer-box {
