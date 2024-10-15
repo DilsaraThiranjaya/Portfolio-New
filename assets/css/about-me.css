@@ -138,7 +138,8 @@ body {
 }
 
 #profile-name {
-  margin: 0 auto;
+  width: 200px;
+  margin: 10px auto;
   padding-top: 5px;
   font-family: "Monotype Corsiva";
   font-style: italic;
