@@ -7,6 +7,7 @@
     <title>Dilsara Thiranjaya</title>
     <link rel="icon" href="/assets/images/Logo.jpeg">
     <link rel="stylesheet" href="/assets/css/about-me.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,6 +32,26 @@
                         <li><a class="middle-menu-box" id="works" href="/pages/works.html">Works</a></li>
                         <li><a class="middle-menu-box" id="gallery" href="/pages/gallery.html">Gallery</a></li>
                         <li><a class="right-menu-box" id="contact-me" href="/pages/contact-me.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="burger-btn">
+                <i id="burger" class="burger fa-solid fa-bars"></i>
+            </button>
+            <div id="menu-panel" class="menu-panel">
+                <nav>
+                    <button id="close-btn">
+                        <i id="close" class="close fa-solid fa-xmark"></i>
+                    </button>
+                </nav>
+                <nav class="side-manu-navigation">
+                    <ul class="side-menu">
+                        <li><a class="side-menu-item" id="about-me-side-menu" href="#">About Me</a></li>
+                        <li><a class="side-menu-item" href="/pages/resume.html">Resume</a></li>
+                        <li><a class="side-menu-item" href="/pages/skills.html">Skills</a></li>
+                        <li><a class="side-menu-item" href="/pages/works.html">Works</a></li>
+                        <li><a class="side-menu-item" href="/pages/gallery.html">Gallery</a></li>
+                        <li><a class="side-menu-item" href="/pages/contact-me.html">Contact Me</a></li>
                     </ul>
                 </nav>
             </div>
@@ -72,7 +93,8 @@
                 <hr>
                 <h1 class="title-text">Activities</h1>
                 <div class="sub-content">
-                    <p class="paragraph-text"><span class="main-text">Beyond my academic pursuits, I actively engage in
+                    <p class="paragraph-text">
+                        <span class="main-text">Beyond my academic pursuits, I actively engage in
                             a variety of
                             activities that help me grow both personally and
                             professionally. These activities include,</span>
@@ -184,6 +206,20 @@
             <p id="copyright">Copyright © 2024 | Dilsara Thiranjaya | All rights reserved</p>
         </footer>
     </div>
+
+    <script>
+        const burger = document.getElementById("burger");
+        const menuPanel = document.getElementById("menu-panel");
+        const closeBtn = document.getElementById("close");
+
+        burger.addEventListener("click", () => {
+            menuPanel.classList.toggle("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menuPanel.classList.remove("active");
+        });
+    </script>
 </body>
 
 </html>
