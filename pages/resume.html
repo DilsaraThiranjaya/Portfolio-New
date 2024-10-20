@@ -7,6 +7,7 @@
     <title>Dilsara Thiranjaya</title>
     <link rel="icon" href="/assets/images/Logo.jpeg">
     <link rel="stylesheet" href="/assets/css/resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -36,6 +37,26 @@
                     </ul>
                 </nav>
             </div>
+            <button id="burger-btn">
+                <i id="burger" class="burger fa-solid fa-bars"></i>
+            </button>
+            <div id="menu-panel" class="menu-panel">
+                <nav>
+                    <button id="close-btn">
+                        <i id="close" class="close fa-solid fa-xmark"></i>
+                    </button>
+                </nav>
+                <nav class="side-manu-navigation">
+                    <ul class="side-menu">
+                        <li><a class="side-menu-item" href="/pages/about-me.html">About Me</a></li>
+                        <li><a class="side-menu-item" id="resume-side-menu" href="#">Resume</a></li>
+                        <li><a class="side-menu-item" href="/pages/skills.html">Skills</a></li>
+                        <li><a class="side-menu-item" href="/pages/works.html">Works</a></li>
+                        <li><a class="side-menu-item" href="/pages/gallery.html">Gallery</a></li>
+                        <li><a class="side-menu-item" href="/pages/contact-me.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <hr>
@@ -43,20 +64,23 @@
                 <h1 class="content-header">Personal Details</h1>
                 <div class="section-content">
                     <img class="section-img" src="/assets/images/Personal-details-img.png" alt="">
-                    <ul class="detail-list">
-                        <li><span class="sub-header">Name :</span> G. A. Dilsara Thiranjaya</li>
-                        <li><span class="sub-header">NIC No :</span> 200125801179</li>
-                        <li><span class="sub-header">Address :</span> Mutiyangoda Watta, Baddegama South, Baddegama</li>
-                        <li><span class="sub-header">Email :</span> dilsarathiranjaya3@gmail.com</li>
-                        <li><span class="sub-header">Nationality :</span> Sinhala</li>
-                    </ul>
-                    <ul class="detail-list">
-                        <li><span class="sub-header">Birthday :</span> 2001/09/14</li>
-                        <li><span class="sub-header">Sex :</span> Male</li>
-                        <li><span class="sub-header">Contact No :</span> 0766677409 / 0742634670</li>
-                        <li><span class="sub-header">Civil Status :</span> Single</li>
-                        <li><span class="sub-header">Religions :</span> Buddhist</li>
-                    </ul>
+                    <div class="sub-container">
+                        <ul class="detail-list">
+                            <li><span class="sub-header">Name :</span> G. A. Dilsara Thiranjaya</li>
+                            <li><span class="sub-header">NIC No :</span> 200125801179</li>
+                            <li><span class="sub-header">Address :</span> Mutiyangoda Watta, Baddegama South, Baddegama
+                            </li>
+                            <li><span class="sub-header">Email :</span> dilsarathiranjaya3@gmail.com</li>
+                            <li><span class="sub-header">Nationality :</span> Sinhala</li>
+                        </ul>
+                        <ul class="detail-list">
+                            <li><span class="sub-header">Birthday :</span> 2001/09/14</li>
+                            <li><span class="sub-header">Sex :</span> Male</li>
+                            <li><span class="sub-header">Contact No :</span> 0766677409 / 0742634670</li>
+                            <li><span class="sub-header">Civil Status :</span> Single</li>
+                            <li><span class="sub-header">Religions :</span> Buddhist</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <hr>
@@ -64,42 +88,44 @@
                 <h1 class="content-header">Education Details</h1>
                 <div class="section-content">
                     <img class="section-img" src="/assets/images/Educational-details-img.png" alt="">
-                    <ul class="detail-list">
-                        <li><span class="sub-header">Schools Attended :</span></li>
-                        <br>
-                        <li>Pilana Vidyarthodaya M.V - Galle</li>
-                        <li>Christ Church Boy’s College - Galle (Ordinary Level - 2017)</li>
-                        <li>Richmond College - Galle (Advanced Level - 2020)</li>
-                        <br>
-                        <li><span class="sub-header">Ordinary Level (2017) : Index No - 71339272</span></li>
-                        <br>
-                        <li>Sinhala Language & Litt. : A</li>
-                        <li>English Language : A</li>
-                        <li>Mathematics : A</li>
-                        <li>Science : A</li>
-                        <li>History : A</li>
-                        <li>Buddhism : A</li>
-                        <li>Art : A</li>
-                        <li>Business & Acct. Studies : B</li>
-                        <li>ICT : A</li>
-                    </ul>
-                    <ul class="detail-list">
-                        <li><span class="sub-header">Higher Educations :</span></li>
-                        <br>
-                        <li>Diploma in ICT (ESoft Metro Campus)</li>
-                        <li>Diploma in English (ESoft Metro Campus)</li>
-                        <li>Diploma in Software Engineering (IJSE Campus)</li>
-                        <br>
-                        <li><span class="sub-header">Advanced Level (2020) : Index No - 1885143</span></li>
-                        <br>
-                        <li>Physics: S</li>
-                        <li>Chemistry : C</li>
-                        <li>Combined Mathematics : S</li>
-                        <li>General English : A</li>
-                        <br>
-                        <li>Common General Test : 066</li>
-                        <li>Z-Score : +0.0845 </li>
-                    </ul>
+                    <div class="sub-container">
+                        <ul class="detail-list">
+                            <li><span class="sub-header">Schools Attended :</span></li>
+                            <br>
+                            <li>Pilana Vidyarthodaya M.V - Galle</li>
+                            <li>Christ Church Boy’s College - Galle (Ordinary Level - 2017)</li>
+                            <li>Richmond College - Galle (Advanced Level - 2020)</li>
+                            <br>
+                            <li><span class="sub-header">Ordinary Level (2017) : Index No - 71339272</span></li>
+                            <br>
+                            <li>Sinhala Language & Litt. : A</li>
+                            <li>English Language : A</li>
+                            <li>Mathematics : A</li>
+                            <li>Science : A</li>
+                            <li>History : A</li>
+                            <li>Buddhism : A</li>
+                            <li>Art : A</li>
+                            <li>Business & Acct. Studies : B</li>
+                            <li>ICT : A</li>
+                        </ul>
+                        <ul class="detail-list">
+                            <li><span class="sub-header">Higher Educations :</span></li>
+                            <br>
+                            <li>Diploma in ICT (ESoft Metro Campus)</li>
+                            <li>Diploma in English (ESoft Metro Campus)</li>
+                            <li>Diploma in Software Engineering (IJSE Campus)</li>
+                            <br>
+                            <li><span class="sub-header">Advanced Level (2020) : Index No - 1885143</span></li>
+                            <br>
+                            <li>Physics: S</li>
+                            <li>Chemistry : C</li>
+                            <li>Combined Mathematics : S</li>
+                            <li>General English : A</li>
+                            <br>
+                            <li>Common General Test : 066</li>
+                            <li>Z-Score : +0.0845 </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <hr>
