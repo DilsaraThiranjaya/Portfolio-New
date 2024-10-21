@@ -133,9 +133,12 @@
                 <h1 class="content-header">Work Experience</h1>
                 <div class="section-content">
                     <img class="section-img" src="/assets/images/Work-experience-img.png" alt="">
-                    <ul class="detail-list">
-                        <li id="no-work">No Work Experience Yet ...</li>
-                    </ul>
+                    <div class="sub-container">
+                        <ul class="detail-list">
+                            <li id="no-work">No Work Experience Yet ...</li>
+                        </ul>
+                        <ul class="detail-list"></ul>
+                    </div>
                 </div>
             </section>
             <hr>
@@ -200,6 +203,20 @@
             </div>
             <p id="copyright">Copyright © 2024 | Dilsara Thiranjaya | All rights reserved</p>
         </footer>
+
+        <script>
+            const burger = document.getElementById("burger");
+            const menuPanel = document.getElementById("menu-panel");
+            const closeBtn = document.getElementById("close");
+
+            burger.addEventListener("click", () => {
+                menuPanel.classList.toggle("active");
+            });
+
+            closeBtn.addEventListener("click", () => {
+                menuPanel.classList.remove("active");
+            });
+        </script>
     </div>
 
 </body>

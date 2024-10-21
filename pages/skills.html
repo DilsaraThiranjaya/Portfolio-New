@@ -259,6 +259,20 @@
             </div>
             <p id="copyright">Copyright © 2024 | Dilsara Thiranjaya | All rights reserved</p>
         </footer>
+
+        <script>
+            const burger = document.getElementById("burger");
+            const menuPanel = document.getElementById("menu-panel");
+            const closeBtn = document.getElementById("close");
+
+            burger.addEventListener("click", () => {
+                menuPanel.classList.toggle("active");
+            });
+
+            closeBtn.addEventListener("click", () => {
+                menuPanel.classList.remove("active");
+            });
+        </script>
     </div>
 
 </body>

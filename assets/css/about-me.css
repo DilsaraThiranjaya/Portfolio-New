@@ -262,11 +262,6 @@ button {
 
 /* ------------------------------- Content ------------------------------- */
 
-.content-box {
-  height: 100%;
-  width: 100%;
-}
-
 hr {
   width: 95%;
   border: 2px solid #c6a600;
@@ -926,6 +921,7 @@ hr {
 
   .menu-panel {
     opacity: 100%;
+    border-radius: 20px;
   }
 
   .menu-panel.active {
@@ -1119,6 +1115,7 @@ hr {
 
   .menu-panel {
     opacity: 100%;
+    border-radius: 20px;
   }
 
   .menu-panel.active {
@@ -1286,7 +1283,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 323px) {
+@media screen and (max-width: 319px) {
   .background {
     padding: 5px 2px 5px 2px;
   }
@@ -1312,6 +1309,7 @@ hr {
 
   .menu-panel {
     opacity: 100%;
+    border-radius: 20px;
   }
 
   .menu-panel.active {
